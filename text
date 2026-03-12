@@ -1,0 +1,6 @@
+movie-website/
+├── index.html          # Main page
+├── style.css           # Styling
+├── script.js           # JavaScript code
+├── movies.db           # Your SQLite database
+└── README.md           # Project info

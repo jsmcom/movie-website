@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 World Cinema Hub - Translated Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-globe"></i>
+            <h1>World Cinema Hub</h1>
+        </div>
+        <p class="tagline">Discover the best translated movies from around the globe</p>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by title, director, or language..." onkeyup="searchMovies()">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="filters-section">
+            <h3>Filter by Language <i class="fas fa-filter"></i></h3>
+            <div class="filter-buttons" id="languageFilters">
+                <!-- Language buttons will be added by JavaScript -->
+            </div>
+            
+            <h3>Filter by Country <i class="fas fa-map-marker-alt"></i></h3>
+            <div class="filter-buttons" id="countryFilters">
+                <!-- Country buttons will be added by JavaScript -->
+            </div>
+            
+            <h3>Filter by Genre <i class="fas fa-film"></i></h3>
+            <div class="filter-buttons" id="genreFilters">
+                <!-- Genre buttons will be added by JavaScript -->
+            </div>
+            
+            <button class="reset-btn" onclick="resetFilters()">
+                <i class="fas fa-undo"></i> Show All Movies
+            </button>
+        </div>
+
+        <div id="moviesContainer" class="movies-grid">
+            <!-- Movies will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Movie Details Modal (pops up when you click a movie) -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Movie details will load here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 World Cinema Hub | Your source for translated cinema</p>
+        <p class="credit">Share your favorite foreign films!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
